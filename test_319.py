@@ -1,3 +1,4 @@
+from ejercicio_319 import *
 
 palabra = 'plátano'
 
