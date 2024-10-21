@@ -1,5 +1,5 @@
 def es_palindromo(palabra: str):
-    if palabra == palabra[::-1]:
+    if palabra.lower() == palabra[::-1].lower():
         print('La palabra', palabra, 'es un palíndromo')
         return True
     else:
