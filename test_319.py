@@ -1,18 +1,6 @@
 from ejercicio_319 import *
 
-palabra = 'plátano'
-
-def test_num_a():
-    assert num_a(palabra) == 2
-
-def test_num_e():
-    assert num_e(palabra) == 0
-
-def test_num_i():
-    assert num_i(palabra) == 0
-
-def test_num_o():
-    assert num_o(palabra) == 1
-
-def test_num_u():
-    assert num_u(palabra) == 0
+def test_num_vocales():
+    assert num_vocales('plátano') == {'a': 2, 'e': 0, 'i':0, 'o': 1, 'u': 0}
+    assert num_vocales('fdjkdhf') == {'a': 0, 'e': 0, 'i':0, 'o': 0, 'u': 0}
+    assert num_vocales('pingüino') == {'a': 0, 'e': 0, 'i':2, 'o': 1, 'u': 1}
